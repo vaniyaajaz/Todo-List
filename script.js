@@ -1,6 +1,6 @@
-username = window.prompt("Name?")
+password = window.prompt("Password?")
 
-if (username === 'Vaniya') {
+if (username === 'invisiblestring') {
     const ul = document.getElementById("list");
     const addbutton = document.getElementById("add");
     const removebutton = document.getElementById("remove");
