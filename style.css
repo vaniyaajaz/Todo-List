@@ -1,4 +1,4 @@
-body {
+#access {
     background-image: url(bg.jpg);
 }
 
@@ -125,7 +125,7 @@ input[type="checkbox"]:checked+label {
 }
 
 #container .controls button:hover {
-    transform: scale(1.05);
+    transform: scale(1.01);
 }
 
 #container .controls #add {
@@ -141,6 +141,12 @@ input[type="checkbox"]:checked+label {
 }
 
 #container .controls #restore {
+    background-color: #de97b6;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+#container .controls #reset {
     background-color: #de97b6;
     border-radius: 10px;
     font-size: 12px;
@@ -167,4 +173,72 @@ input::-webkit-input-placeholder {
     color: #e0acc2;
     font-size: 12px;
     padding-bottom: 100px;
+}
+
+#password {
+    border: 0px;
+    background-color: #ffffff;
+    margin: 0%;
+    outline: none;
+    border-radius: 25px;
+    color: #e0acc2;
+    padding-left: 5px;
+}
+
+#password:focus {
+    outline: #bc849b solid 1px;
+}
+
+#both {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
+    gap: 4px;
+    box-sizing: border-box;
+    padding: 2px 8px;
+}
+
+#shown {
+    background-color: #ffffff;
+    height: 20px;
+    width: 30px;
+    margin: 0%;
+    background-image: url(show.png);
+    background-position: center;
+    background-size: cover;
+    border: 0px;
+    flex-shrink: 0;
+}
+
+#hid {
+    background-color: #ffffff;
+    margin: 0%;
+    height: 20px;
+    width: 30px;
+    background-image: url(eye.png);
+    background-position: center;
+    background-size: cover;
+    border: 0px;
+    flex-shrink: 0;
+}
+
+#index {
+    background-color: #ffdae9;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 1000px #ffffff inset !important;
+    -webkit-text-fill-color: #e0acc2 !important;
+    transition: background-color 9999s ease-in-out 0s;
 }
