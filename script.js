@@ -1,8 +1,8 @@
-window.location.href = "accesspage.html";
+window.location.href = "index.html";
 password = window.prompt("Password?")
 
 if (username === 'invisiblestring') {
-    window.location.href = "index.html";
+    window.location.href = "AccessPage.html";
     const ul = document.getElementById("list");
     const addbutton = document.getElementById("add");
     const removebutton = document.getElementById("remove");
