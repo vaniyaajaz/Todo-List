@@ -2,6 +2,7 @@ const ul = document.getElementById("list");
 const addbutton = document.getElementById("add");
 const removebutton = document.getElementById("remove");
 const restorebutton = document.getElementById("restore");
+const resetbutton = document.getElementById("reset");
 
 let removedItems = [];
 
@@ -43,4 +44,12 @@ removebutton.addEventListener("click", () => {
 restorebutton.addEventListener("click", () => {
     removedItems.forEach(item => ul.appendChild(item));
     removedItems = [];
+});
+
+resetbutton.addEventListener("click", () => {
+    removedItems = [];
+    const items = ul.children
+    for (let i = items.length - 1; i >= 0; i--) {
+        ul.removeChild(items[i])
+    }
 });
