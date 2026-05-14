@@ -30,6 +30,13 @@ function addItem() {
 
 addbutton.addEventListener("click", addItem);
 
+const inputBox = document.querySelector('input')
+inputBox.addEventListener('keyup', (e) => {
+    if (e.key === 'Enter') {
+        addItem()
+    }
+})
+
 removebutton.addEventListener("click", () => {
     const items = ul.children;
     for (let i = items.length - 1; i >= 0; i--) {
